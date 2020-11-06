@@ -110,6 +110,10 @@
     return isNaN(n) ? val : n
   }
 
+  function myFunction() {
+    document.getElementById("demo").innerHTML = Math.random();
+}
+
   /**
    * Make a map and return a function for checking if a key
    * is in that map.

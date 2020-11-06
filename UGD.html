@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang= "en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= device-width, initial-scale=1.0">
+    <title>Ungeided</title>
+    <script src="vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        <h1>{{judul}}</h1>
+        <p>{{paragraf}}</p>
+        
+    </div>
+    <div>
+        <input v-model="number" placeholder="Masukkan Angka..." />
+    </div>
+    <div>
+        <button @click="TebakAngka" style="background-color: crimson;">Tebak</button>
+    </div>
+    <div>
+        <footer>
+            <p style="margin-left: 100px;" style="margin-top: 50px;">
+                Nicholas | 180709609 | PAW A
+            </p>
+        </footer>
+    </div>
+</body>
+<script>
+    new Vue({
+        el: "#app",
+        data: {
+            judul: "Tebak Angka !",
+            paragraf: "Tebak Angka 1 - 10",
+        },
+        methods: {
+            Tebak() {
+                if(Tebak == Math.random())
+                {
+
+                }
+            },
+        },
+    });
+</script>
+</html>
